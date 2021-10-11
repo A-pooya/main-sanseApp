@@ -1,0 +1,27 @@
+{
+  "name": "TypeScript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^6.0.9"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/mongoose": "^5.11.97",
+    "nodemon": "^2.0.13",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "dev": "cross-env NODE-ENV=development nodemon src/server.ts",
+    "build": "ts-node -p ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
